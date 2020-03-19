@@ -1,11 +1,15 @@
 This script will draw lines in the editor to any objects connected with UnityEvents. The script should be placed somewhere in your Assets, and can then be accessed from your scripts. It must be called in either OnDrawGizmos or OnDrawGizmosSelected
+
+<iframe src='https://gfycat.com/ifr/slipperyheftygopher' frameborder='0' scrolling='no' allowfullscreen width='640' height='453'></iframe>
+
+Implementation
 ```C#
 public UnityEvent myEvent;
 
 private void OnDrawGizmosSelected()
-    {
-        genaralskar.DrawEventLines.Draw(myEvent, transform);
-    }
+{
+	genaralskar.DrawEventLines.Draw(myEvent, transform);
+}
 ```
 
 `myEvent` is your UnityEvent
